@@ -13,9 +13,3 @@ if sex != "Other":
     sex_as_string = "(M)" if sex == "Male" else "(F)"
 st.write(f"Hello, {name} {sex_as_string}. You are {age} but you look gorgeous!🌞")
 
-
-st._main
-
-from subprocess import run
-
-print(__file__)

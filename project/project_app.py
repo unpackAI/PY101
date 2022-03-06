@@ -1,4 +1,3 @@
-from pickle import LIST
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -13,6 +12,7 @@ st.title("WebScrapping of Lego Prices around the world 🌏")
 st.write("*by <name>*")
 # st.write("---")
 
+st.sidebar.button("Refresh Data", on_click=st.legacy_caching.clear_cache)
 
 EXCHANGE_RATES = get_exchange_rates(["USD", "EUR", "GBP"])
 st.sidebar.header("Exchange Rates:")
